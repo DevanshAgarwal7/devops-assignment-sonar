@@ -15,9 +15,6 @@
 	<description>Project for Spring Boot Web App</description>
 	<properties>
 		<java.version>11</java.version>
-		<!-- Define properties for SonarQube analysis -->
-        <sonar.host.url>http://localhost:9000</sonar.host.url>
-        <sonar.login>be680b10376aaeef3ab73892572e2deacc8b9b9d</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -38,12 +35,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!-- Add the SonarQube Maven plugin -->
-            		<plugin>
-                		<groupId>org.sonarsource.scanner.maven</groupId>
-                		<artifactId>sonar-maven-plugin</artifactId>
-                		<version>3.9.0.2155</version>
-            		</plugin>
 		</plugins>
 	</build>
 
